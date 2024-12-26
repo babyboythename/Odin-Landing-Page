@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-.header-hero {
+.header-hero-background {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     /* height: 330px; of background color*/
-    /* flex: 1; */
+    flex: 1;
 }
 
 footer {
@@ -28,21 +28,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
 }
 
-.container {
+.container,
+.header-container {
     width: 1260px;
 }
 
-.header,
-footer {
+.header {
     height: 50px;
     display: flex;
-    align-items: center;
-}
-
-.header {
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -78,12 +76,12 @@ ul {
     margin-bottom: 15px;
 }
 
-button {
+.hero-button {
     height: 30px;
     width: 100px;
     background-color: #3882F6;
     color: #FFFFFF;
-    border: 1px;
+    border: solid #3882F6 1px;
     border-radius: 8px;
 }
 
@@ -97,11 +95,13 @@ button {
     align-items: center;
 }
 
-.content-section {
+.content-section-background {
     display: flex;
     justify-content: center;
-    
+    background-color: #FFFFFF;
+    flex: 1;
 }
+
 .content-container {
     width: 1100px;
     display: flex;
@@ -125,7 +125,7 @@ button {
 }
 /* to add more white spacing beneath the information section adjust the height */
 .illustration {
-    height: 220px; 
+    height: 200px; 
     width: 150px;
     text-align: center;
     border: 5px;
@@ -140,10 +140,12 @@ button {
     margin-bottom: 10px;
 }
 
-.quote-section {
+.quote-section-background {
     background-color: #E5E7EB;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .quote-container {
@@ -159,17 +161,21 @@ button {
 .quote-container p {
     display: flex;
     justify-content: flex-end;
+    margin-right: 27px;
 }
 
-.ad-section {
+.ad-section-background {
     display: flex;
     justify-content: center;
-    height: 100px;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex: 1;
 }
 
 .ad-container {
     background-color: #3882F6;
     width: 1260px;
+    height: 100px;
     border-radius: 7px;
     display: flex;
     justify-content: space-around;
@@ -181,7 +187,8 @@ button {
 .ad-button {
     height: 30px;
     width: 100px;
-    border: #FFFFFF 1px;
+    border: solid #FFFFFF 1px;
     border-radius: 8px;
-    /* background-color: red; */
+    background-color: #3882F6;
+    color: #FFFFFF;
 }

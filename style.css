@@ -65,7 +65,7 @@ ul {
     color: #E5E7Eb;
 }
 
-.introduction-container {
+.hero-container {
     display: flex;
     justify-content: space-between;
 }

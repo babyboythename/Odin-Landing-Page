@@ -108,10 +108,8 @@ a {
 .image-placeholder {
     width: 600px;
     height: 200px;
+    object-fit: none;
     background-color: grey; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .content-section-background {

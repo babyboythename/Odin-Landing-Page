@@ -11,13 +11,12 @@ body {
     flex-direction: column;
 }
 
-.header-hero-background {
+.hero-background {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 330px; of background color*/
     flex: 1;
 }
 
@@ -30,7 +29,7 @@ footer {
     height: 50px;
 }
 
-.header-background{
+.header-top{
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
@@ -38,17 +37,19 @@ footer {
     align-items: center;
 }
 
-.hero-container,
-.header{
+.hero-container {
     width: 1260px;
+    height: 250px;
+    display: flex;
+    align-items: center;
 }
 
 .header {
     height: 50px;
+    width: 1260px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .logo
@@ -63,6 +64,11 @@ ul {
     gap: 24px;
     font-size: 18px;
     color: #E5E7Eb;
+}
+
+a {
+    color: #E5E7Eb;
+    text-decoration: none;
 }
 
 .hero-container {
@@ -90,6 +96,13 @@ ul {
     color: #FFFFFF;
     border: solid #3882F6 1px;
     border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.hero-button:hover {
+    background-color: #9bb8e6;
+    color: #FFFFFF;
+    border: solid #FFFFFF 1px;
 }
 
 .image-placeholder {
@@ -104,15 +117,14 @@ ul {
 .content-section-background {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #FFFFFF;
     flex: 1;
 }
 
 .content-container {
     width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 300px;
 }
 
 .content-heading {
@@ -129,9 +141,9 @@ ul {
     display: flex;
     justify-content: space-around;
 }
-/* to add more white spacing beneath the information section adjust the height */
+
 .illustration {
-    height: 200px; 
+    height: 230px; 
     width: 150px;
     text-align: center;
     border: 5px;
@@ -196,5 +208,11 @@ ul {
     border: solid #FFFFFF 1px;
     border-radius: 8px;
     background-color: #3882F6;
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+}
+
+.ad-button:hover {
+    background-color: #9bb8e6;
     color: #FFFFFF;
 }
